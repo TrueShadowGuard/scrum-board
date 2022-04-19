@@ -11,7 +11,7 @@ function onPointerDown(e) {
     $task.addEventListener("pointermove", onPointerMove);
     $task.addEventListener("pointerup", onPointerUp);
 
-    const $parentColumn = $task.closest(".tasks-column");
+    const $parentColumn = $task.closest(".tasks-column__tasks");
     const startingBox = getBoxRelativelyDocument($task);
     $task.style.left = startingBox.left + "px";
     $task.style.top = startingBox.top + "px";
@@ -61,7 +61,7 @@ function onPointerDown(e) {
 function get$TaskColumnAt(x, y) {
     const elementsFromPoint = [...document.elementsFromPoint(x, y)];
     for (let $element of elementsFromPoint) {
-        if ($element.classList.contains("tasks-column")) {
+        if ($element.classList.contains("tasks-column__tasks")) {
             return $element;
         }
     }

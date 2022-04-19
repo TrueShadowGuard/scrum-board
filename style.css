@@ -27,14 +27,20 @@ html {
 
 .tasks-column {
     width: 300px;
-    min-height: 400px;
     max-width: 33.3%;
+}
+
+.tasks-column__header {
+    font-size: 2rem;
+}
+
+.tasks-column__tasks {
+    min-height: 400px;
     padding: 2px;
 
     background-color: var(--secondary-color);
     border: var(--primary-border);
 }
-
 .task {
     position: static;
     background-color: var(--primary-color);

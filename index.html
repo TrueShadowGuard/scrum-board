@@ -15,16 +15,25 @@
 </head>
 <body>
 <div class="tasks">
-    <div class="tasks-column tasks-column__uncompleted">
-        <div class="task">
-            Make a login form
-        </div>
-        <div class="task">
-            Make a register form
+    <div class="tasks-column">
+        <div class="tasks-column__header">To do</div>
+        <div class="tasks-column__tasks tasks-column__todo">
+            <div class="task">
+                Make a login form
+            </div>
+            <div class="task">
+                Make a register form
+            </div>
         </div>
     </div>
-    <div class="tasks-column tasks-column__in-review"></div>
-    <div class="tasks-column tasks-column__completed"></div>
+    <div class="tasks-column">
+        <div class="tasks-column__header">In review</div>
+        <div class="tasks-column__tasks tasks-column__in-review"></div>
+    </div>
+    <div class="tasks-column">
+        <div class="tasks-column__header">Completed</div>
+        <div class="tasks-column__tasks tasks-column__completed"></div>
+    </div>
 </div>
 </body>
 </html>
