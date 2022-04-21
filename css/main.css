@@ -1,0 +1,68 @@
+.control-panel {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.tasks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 50px 0;
+    margin: 0 auto;
+}
+
+.tasks-column {
+    min-width: 300px;
+    max-width: 25%;
+    margin: 0 8px;
+}
+
+.tasks-column__header {
+}
+
+.tasks-column__tasks {
+    min-height: 400px;
+    padding: 2px;
+
+    background-color: var(--secondary-color);
+    border: var(--primary-border);
+}
+.task-wrapper {
+    position: static;
+}
+
+.task {
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 6px;
+    margin-bottom: 4px;
+    min-height: 80px;
+
+    border: var(--primary-border);
+    cursor: pointer;
+    touch-action: none;
+}
+
+.task__delete {
+    position: absolute;
+    line-height: 0;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+
+    color: var(--danger-color);
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+}
+
+.task--moving {
+    position: absolute;
+}
+
+.task-thumb {
+    background-color: var(--light-color);
+    padding: 20px;
+    margin-bottom: 4px;
+}

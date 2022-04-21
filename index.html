@@ -7,32 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <script defer src="libs/anime.js"></script>
-    <script defer src="utils.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="_libs/anime.js"></script>
+    <script defer src="js/utils.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
 <body>
+<div class="control-panel">
+    <button id="addTaskButton">Add a task</button>
+    <button id="clearAllButton">Clear all</button>
+</div>
 <div class="tasks">
-    <div class="tasks-column">
+    <div class="tasks-column tasks-column-to-do">
         <div class="tasks-column__header">To do</div>
-        <div class="tasks-column__tasks tasks-column__todo">
-            <div class="task">
-                Make a login form
-            </div>
-            <div class="task">
-                Make a register form
+        <div class="tasks-column__tasks">
+            <div class="task-wrapper">
+                <div class="task">
+                    <div class="task__text">Make a login form</div>
+                    <button class="task__delete">S</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="tasks-column">
+    <div class="tasks-column tasks-column-doing">
+        <div class="tasks-column__header">Doing</div>
+        <div class="tasks-column__tasks"></div>
+    </div>
+    <div class="tasks-column tasks-column-in-review">
         <div class="tasks-column__header">In review</div>
         <div class="tasks-column__tasks tasks-column__in-review"></div>
     </div>
-    <div class="tasks-column">
+    <div class="tasks-column tasks-column-completed">
         <div class="tasks-column__header">Completed</div>
-        <div class="tasks-column__tasks tasks-column__completed"></div>
+        <div class="tasks-column__tasks"></div>
     </div>
 </div>
 </body>

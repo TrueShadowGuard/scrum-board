@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --main-hue: 60;
+    --primary-color: hsl(var(--main-hue), 70%, 50%);
+    --secondary-color: hsl(var(--main-hue), 50%, 50%);
+    --light-color: hsl(var(--main-hue), 70%, 60%);
+    --dark-color: hsl(var(--main-hue), 70%, 30%);
+    --danger-color: darkred;
+
+    --primary-border-width: 2px;
+    --primary-border: var(--primary-border-width) solid var(--dark-color);
+}
+
+html {
+    font-family: sans-serif;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: var(--primary-border);
+    padding: 6px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-color);
+}
